@@ -1,0 +1,178 @@
+/* Default styles */
+@font-face {
+    font-family: plusjakartasans;
+    src: url(font/plusjakartasans-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: plusjakartasansextrabold;
+    src: url(font/plusjakartasans-extrabold.ttf);
+}
+
+body {
+    background-color: #151515;
+    max-width: fit-content;
+}
+
+#teamicon {
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+}
+
+#Title {
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: plusjakartasans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 60px;
+}
+
+#downloadbtn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+
+}
+
+#teamicon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding-right: 250px;
+}
+
+#githubicon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding-right: 390px;
+}
+
+#thenextera {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: plusjakartasansextrabold;
+    font-size: 124px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+#downarrow {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.page {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    font-family: plusjakartasans;
+    font-weight: bold;
+  }
+  
+  #footer p {
+    margin: 0 170px;
+}
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for tablets */
+  #Title {
+    font-size: 30px;
+    padding-left: 15px;
+  }
+  
+  #teamicon {
+    width: auto;
+    height: 53px;
+    padding-right: 170px;
+  }
+  
+  #githubicon {
+    width: auto;
+    height: 53px;
+    padding-right: 250px;
+  }
+  
+  #thenextera {
+    font-size: 64px;
+  }
+
+  #downloadbtn {
+    width: auto;
+    height: 53px;
+    padding-right: 10px;
+  }
+  #downarrow {
+    width: auto;
+    height: 30px;
+  }
+  #footer p {
+    margin: 0 50px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for phones */
+  #Title {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  
+  #teamicon {
+    padding-right: 90px;
+    width: auto;
+    height: 25px;
+  }
+  
+  #githubicon {
+    padding-right: 130px;
+    width: auto;
+    height: 25px;
+  }
+  
+  #thenextera {
+    font-size: 40px;
+  }
+  #downloadbtn {
+    height: 25px;
+    width: auto;
+    padding-right: 15px;
+  }
+  #downarrow {
+    height: 25px;
+    width: auto;
+  }
+  #footer p {
+    margin: 0 10px;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    font-family: plusjakartasans;
+    font-weight: bold;
+    font-size: x-small;
+  }
+}
