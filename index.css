@@ -179,6 +179,11 @@ body {
 }
 a {
   display: block;
+  text-decoration: none;
+  color:#888888;
+}
+a:visited { 
+  color: #888888;
 }
 #page1{
   display: block;
