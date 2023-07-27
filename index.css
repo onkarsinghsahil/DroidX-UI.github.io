@@ -1,0 +1,190 @@
+/* Default styles */
+@font-face {
+    font-family: plusjakartasans;
+    src: url(font/plusjakartasans-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: plusjakartasansextrabold;
+    src: url(font/plusjakartasans-extrabold.ttf);
+}
+
+body {
+    background-color: #151515;
+    max-width: fit-content;
+}
+
+#teamicon {
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+}
+
+#Title {
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: plusjakartasans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 60px;
+}
+
+#downloadbtn {
+    position: absolute;
+    right: 70px;
+    padding-right: 10px;
+
+}
+
+#teamicon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding-right: 250px;
+}
+
+#githubicon {
+    
+    position: absolute;
+    right: auto;
+    padding-right: 390px;
+}
+
+
+
+#downarrow {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.page {
+    max-width: 100%;
+    height: auto;
+}
+#footer {
+    display: flex;
+    color: #888888;
+    font-family: plusjakartasans;
+    font-weight: bold;
+  }
+  
+  #footer p {
+    margin: 0 170px;
+}
+#subhead {
+  animation: fadeIn 3s;
+}
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for tablets */
+  #Title {
+    font-size: 30px;
+    padding-left: 15px;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  
+  #footer p {
+    margin: 0 65px;
+}
+#footer {
+  display: flex;
+  color: #888888;
+  font-family: plusjakartasans;
+  font-weight: bold;
+  font-size: smaller;
+}
+#page1, #page2, #page3 {
+  display: block;
+  animation: fadeIn 3s;
+}
+#subhead {
+  animation: fadeIn 3s;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for phones */
+  #Title {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  
+  #teamicon {
+    padding-right: 90px;
+    width: auto;
+    height: 25px;
+  }
+  
+  #githubicon {
+    padding-right: 130px;
+    width: auto;
+    height: 25px;
+  }
+  
+  #thenextera {
+    font-size: 40px;
+  }
+  #downloadbtn {
+    height: 25px;
+    width: auto;
+    padding-right: 15px;
+  }
+  #downarrow {
+    height: 25px;
+    width: auto;
+  }
+  #footer p {
+    margin: 0 10px;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    font-family: plusjakartasans;
+    font-weight: bold;
+    font-size: x-small;
+  }
+  #page1, #page2, #page3 {
+    display: block;
+    animation: fadeIn 3s;
+  }
+  #subhead {
+    animation: fadeIn 3s;
+  }
+}
+a {
+  display: block;
+  text-decoration: none;
+  color:#888888;
+}
+a:visited { 
+  color: #888888;
+}
+#page1{
+  display: block;
+  animation: fadeIn 3s;
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@media only screen and (min-width: 769px) {
+#page2, #page3 {
+  display: none;
+}
+}
