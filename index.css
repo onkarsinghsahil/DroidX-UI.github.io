@@ -130,7 +130,17 @@ body {
     height: 30px;
   }
   #footer p {
-    margin: 0 50px;
+    margin: 0 65px;
+}
+#footer {
+  display: flex;
+  color: #888888;
+  font-family: plusjakartasans;
+  font-weight: bold;
+  font-size: smaller;
+}
+#page1, #page2, #page3 {
+  display: block;
 }
 }
 
@@ -175,6 +185,9 @@ body {
     font-family: plusjakartasans;
     font-weight: bold;
     font-size: x-small;
+  }
+  #page1, #page2, #page3 {
+    display: block;
   }
 }
 a {
