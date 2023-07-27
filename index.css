@@ -82,11 +82,9 @@ body {
 .page {
     max-width: 100%;
     height: auto;
-    display: block;
 }
 #footer {
     display: flex;
-    justify-content: center;
     color: #888888;
     font-family: plusjakartasans;
     font-weight: bold;
@@ -94,6 +92,9 @@ body {
   
   #footer p {
     margin: 0 170px;
+}
+#subhead {
+  animation: fadeIn 3s;
 }
 /* Media queries */
 @media only screen and (max-width: 768px) {
@@ -175,4 +176,19 @@ body {
     font-weight: bold;
     font-size: x-small;
   }
+}
+a {
+  display: block;
+}
+#page1{
+  display: block;
+  animation: fadeIn 3s;
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#page2, #page3 {
+  display: none;
 }
