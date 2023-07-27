@@ -1,50 +1,60 @@
-
+body{
+    /* background: rgb(59, 66, 99) !important; */
+}
 
 #thenextera {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 10svw;
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 800;
-    line-height: normal;
-    text-align: center;
-    position:relative;
-
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10svw;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+  height: 90vh;
+  margin-top: 7vw;
 }
 
-i{
-    padding: 10px 10px 10px 10px;
+i {
+  padding: 10px 10px 10px 10px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.btn{
-    color: rgb(255, 255, 255) !important;
-    border-radius: 50px !important;
-    
+.btn {
+  color: rgb(255, 255, 255) !important;
+  border-radius: 50px !important;
 }
-.sticky-top{
-        background-color: #fff !important;
-        transition: background-color 200ms linear;
-
+.sticky-top {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
-img{
-    
-        max-width: 100%;
-        max-height: 100%;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
  {
-    animation: fadeIn 3s;
-  }
+  animation: fadeIn 3s;
+}
 @media screen mi {
-    
 }
 @media only screen and (max-width: 375px) {
-    /* Adjust styles for phones */
-    
-    .fa-github,.fa-people-group,.btn{
-        font-size: 7svw !important;
-    }
-    
+  /* Adjust styles for phones */
+
+  .fa-github,
+  .fa-people-group,
+   {
+    font-size: 7svw !important;
+  }
+  .logo{
+    width :15vw!important ;
+  }
+  #thenextera {
+    text-align: center;
+    height: 90vh;
+    margin-top: 10vw;
+    font-size: 100px;
+  }
+  
 }
