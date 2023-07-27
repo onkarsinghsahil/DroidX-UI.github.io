@@ -141,6 +141,10 @@ body {
 }
 #page1, #page2, #page3 {
   display: block;
+  animation: fadeIn 3s;
+}
+#subhead {
+  animation: fadeIn 3s;
 }
 }
 
@@ -188,6 +192,10 @@ body {
   }
   #page1, #page2, #page3 {
     display: block;
+    animation: fadeIn 3s;
+  }
+  #subhead {
+    animation: fadeIn 3s;
   }
 }
 a {
