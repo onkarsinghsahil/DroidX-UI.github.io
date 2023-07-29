@@ -77,5 +77,6 @@ a {
     margin-top: 4vw;
     --bs-btn-font-size: 1rem !important;
     display: initial !important;
+    size: auto;
   }
 }
