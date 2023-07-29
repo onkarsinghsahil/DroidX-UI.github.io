@@ -35,13 +35,27 @@ body{
 .btn:hover{
   background-color: #536FEB !important;
 }
+
 .col{
   display: flex;
     justify-content: flex-end;
     position: relative;
     right: 6vw;
 }
-
+.container-fluid{
+  display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    align-items: center;
+    
+}
+.container-fluid>a{
+  color: rgb(81, 82, 80);
+}
+.container-fluid>a:hover{
+  color: #536FEB !important;
+}
 i{
   margin: 10px;
 }
@@ -72,7 +86,7 @@ a {
 }
 .image-caption{
   bottom: 5px;
-    left: 5px
+    left: 5%;
 }
   .btn{
     margin-top: 4vw;
