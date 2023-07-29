@@ -1,60 +1,81 @@
-body{
-    /* background: rgb(59, 66, 99) !important; */
+*{
+  margin: 0;
+  padding: 0  ;
 }
 
-#thenextera {
-  color: rgba(0, 0, 0, 0.5);
+body{
+  background-color: #0B0B0B !important;
+}
+.thenextera {
+  color: rgba(185, 182, 182, 0.5);
   font-size: 10svw;
   font-family: "Raleway", sans-serif !important;
   font-weight: 800;
   line-height: normal;
-  text-align: center;
   position: relative;
-  height: 90vh;
   margin-top: 7vw;
 }
-
-i {
-  padding: 10px 10px 10px 10px;
+/* Custom CSS */
+.image-container {
+  position: relative;
+  width: 100%;
 }
 
+.image-caption {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  right: 0; /* Optional: Add background color for better readability */
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 5vw;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 800;
+}
+.btn:hover{
+  background-color: #536FEB !important;
+}
+.col{
+  display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 6vw;
+}
+
+i{
+  margin: 10px;
+}
 a {
-  text-decoration: none;
-}
-.btn {
-  color: rgb(255, 255, 255) !important;
-  border-radius: 50px !important;
-}
-.sticky-top {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
-img {
-  max-width: 100%;
-  max-height: 100%;
+  text-decoration: none !important;
 }
 
- {
-  animation: fadeIn 3s;
-}
-@media screen mi {
-}
-@media only screen and (max-width: 375px) {
+
+
+@media only screen and (max-width: 420px) {
   /* Adjust styles for phones */
 
   .fa-github,
-  .fa-people-group,
+  .fa-people-group
    {
-    font-size: 7svw !important;
+    font-size: 7vw !important;
   }
   .logo{
     width :15vw!important ;
   }
-  #thenextera {
-    text-align: center;
-    height: 90vh;
-    margin-top: 10vw;
-    font-size: 100px;
+  .container>.text-center {
+    display: flex;
+    flex-direction: column;
+    font-size: 20vw;
+}
+.navbar>.container{
+  justify-content: center !important;
+}
+.image-caption{
+  bottom: 5px;
+    left: 5px
+}
+  .btn{
+    margin-top: 4vw;
+    --bs-btn-font-size: 1rem !important;
+    display: initial !important;
   }
-  
 }
