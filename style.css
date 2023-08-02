@@ -13,8 +13,11 @@ body{
   font-weight: 800;
   line-height: normal;
   position: relative;
-  margin-top: 10vw;
-  margin-bottom: 20vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20vh;
 }
 /* Custom CSS */
 .image-container {
@@ -56,30 +59,36 @@ body{
 .container-fluid>a:hover{
   color: #536FEB !important;
 }
-i{
-  margin: 10px;
-}
 a {
   text-decoration: none !important;
 }
+.sm{
+  display: none;
+  
+}
+.lg{
+  gap: 2rem!important;
+    display: flex;
+    align-items: center;
+}
 
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 515px) {
   /* Adjust styles for phones */
 
-  .fa-github,
-  .fa-people-group
-   {
-    font-size: 7vw !important;
-  }
-  .logo{
-    width :15vw!important ;
-  }
+ .gap-3{
+  position: relative;
+    bottom: 200px;
+ }
   .container>.text-center {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    font-size: 20vw;
+    height: 75vh;
+    font-size: 10vh;
+    bottom: 7vh;
 }
 .navbar>.container{
   justify-content: center !important;
@@ -88,10 +97,13 @@ a {
   bottom: 5px;
     left: 5%;
 }
-  .btn{
-    margin-top: 4vw;
-    --bs-btn-font-size: 1rem !important;
-    display: initial !important;
-    size: auto;
+
+  .lg{
+    display: none;
+  }
+  .sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
