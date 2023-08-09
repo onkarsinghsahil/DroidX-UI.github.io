@@ -18,3 +18,13 @@ document.onscroll = function() {
         console.log("loaded3");
     }
 }
+
+
+
+
+
+function toggle(){
+    const navbar = document.querySelector(".mobilenav");
+    navbar.classList.toggle("active");
+    document.querySelector("#container").classList.toggle("active");
+}

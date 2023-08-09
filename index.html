@@ -6,19 +6,64 @@
     <title>DroidX-UI</title>
     <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
-    <div id="header">
-        <h2 id="Title">DroidX-UI</h2>
-        <a href="https://github.com/DroidX-UI/" id="githubicon"><img src="imgs/githubicon.png"></a>
-        <img src="imgs/teamicon.png" id="teamicon">
-        <a href="https://sourceforge.net/projects/droidxui-releases/files/" id="downloadbtn"><img src="imgs/downloadbtn.png" id="downloadbtn"></a>
-    </div>
+                <div class="mobilenav">
+                    <i onclick="toggle()" class="fa-solid fa-circle-xmark"></i>
+                <ul>
+                    <li>Home</li>
+                    <li>Changelog</li>
+                    <li>Team</li>
+                    <li>Github</li>
+                    <li>Devices</li>
+                    <li>Download</li>
+
+                </ul>
+                </div>
+
+
+            <div id="header">
+                <h2 id="Title">DroidX-UI</h2>
+                <div class="side-navbar">
+                        <a href="https://github.com/DroidX-UI/">
+                            <div id="githubicon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <!-- <img src="imgs/githubicon.png"> -->
+                        </a>
+                        <a>
+                            <!-- <img src="imgs/teamicon.png" id="teamicon"> -->
+                            <button id="teambtn">Devices</button>
+                        </a>
+                        <a>
+                            <!-- <img src="imgs/teamicon.png" id="teamicon"> -->
+                            <button id="teambtn">Changelog</button>
+                        </a>
+                        <a>
+                            <!-- <img src="imgs/teamicon.png" id="teamicon"> -->
+                            <button id="teambtn">Team</button>
+                        </a>
+
+
+                        <a href="https://sourceforge.net/projects/droidxui-releases/files/">
+                            <!-- <img src="imgs/downloadbtn.png" id="downloadbtn"> -->
+                            <button id="downloadbtn">Download</button>
+                        </a>
+                </div>
+                <div class="menubtn" ><i onclick="toggle()" id="menuBtn" class="fa-solid fa-bars"></i></div>
+            </div>
+
     <div id="subhead">
         <h1 id="thenextera">The <span style="color: #FFF">Next </span>Era.</h1>
-        <img src="imgs/downarrow.png" id="downarrow">
+        <a href="#page1"> <img src="imgs/downarrow.png" id="downarrow"></a>
     </div>
+    
+
+
+
+
     <div id="page1">
         <a href="https://t.me/droidxui_screenshots">
         <img src="imgs/page1.png" id="page1img" class="page">
