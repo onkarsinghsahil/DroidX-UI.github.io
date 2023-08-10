@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+  --light-cream-color: #e9d7c5;
+  --dark-cream-color: #34302d;
+  --light-white-color: #f6f1ed
+}
+
+
 /* Default styles */
 @font-face {
     font-family: plusjakartasans;
@@ -29,7 +38,8 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 9;
-
+  background: var(--light-cream-color);
+  color: var(--dark-cream-color)
 }
 
 ::-webkit-scrollbar{
@@ -55,7 +65,6 @@ body {
     align-items: center;
     width: 100%;
 
-
 }
 .side-navbar{
   display: flex;
@@ -71,7 +80,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100%;
-  color: white;
+  color: var(--light-cream-color);
   background: black;
   /* display: none; */
   transform: translateY(-100%);
@@ -83,7 +92,7 @@ body {
   width: 100%;
   height: 15%;
   padding-inline: 30px;
-
+  color:white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,10 +100,24 @@ body {
 }
 .left .time{
 font-size: 2rem;
+font-family: "Open Sans";
+
 padding-bottom: 10px;
 }
 .left .day, .right{
-  font-size: 0.8rem;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+}
+
+
+.network{
+  display: flex;
+  justify-content: right;
+}
+.battery{
+  display: flex;
+  align-items: center;
+  justify-content: center;;
 }
 .boxes{
   width: 100%;
@@ -104,11 +127,11 @@ padding-bottom: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   place-items: center;
-
   box-sizing: border-box;
-
-
 }
+
+
+
 .links{
   width: 150px; 
   height: 50px;
@@ -122,7 +145,7 @@ padding-bottom: 10px;
 .blank{
   width: 100%;
   height: 60%;
-  background: #f5dfc7;
+  background: var(--light-cream-color);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: absolute;
@@ -131,13 +154,26 @@ padding-bottom: 10px;
   justify-content: center;
 
 }
-.mobilenav i{
-  font-size: 3rem;
+.mobilenav span{
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
   position: absolute;
-  bottom: 30px;
-color: #34302d;
-filter: drop-shadow(0px 0px 20px #847467);
+  bottom: 100px;
+  background: var(--dark-cream-color);
+  color:var(--light-cream-color);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+
+  filter: drop-shadow(0px 0px 5px #131212);
 }
+
+.mobilenav span:hover{
+  cursor: pointer;
+}
+
+
 .mobilenav.active{
   transform: translateY(0%);
 }
@@ -161,7 +197,7 @@ filter: drop-shadow(0px 0px 20px #847467);
 
 
 #Title {
-    color: #FFF;
+    color: var(--dark-cream-color);
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: plusjakartasans;
     font-size: clamp(2rem, 6vw, 3rem);
@@ -182,8 +218,9 @@ filter: drop-shadow(0px 0px 20px #847467);
 button{
   border: none;
 }
-button:hover, #githubicon:hover{
+button:hover, #githubicon i:hover{
   cursor: pointer;
+  color: #e9d7c5;
   background: #04579b;
 
 }
@@ -191,7 +228,6 @@ button:hover, #githubicon:hover{
   width: 100%;
   height: 80vh;
   overflow: hidden;
-  border:2px solid red;
 }
 
 
@@ -201,7 +237,8 @@ button{
   font-size: 1rem;
     border-radius: 40px;;
     background: transparent;
-    color: white;
+    color: var(--dark-cream-color);
+
     border : none;
     font-family: "plusjakartasans";
 
@@ -209,19 +246,24 @@ button{
 
 #githubicon {
   font-size: 2.5rem;
-  width: 60px; height: 60px;
+  width: 50px; 
+  height: 50px;
   border-radius: 50%;
-  padding-bottom: 1px;
   background: transparent;
+
   align-items: center;
-  color: white;
+  /* border: 2px solid red; */
 
 }
 #githubicon i{
   position: relative;
   top: 50%;
   left: 50%;
+  padding: 6px;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
+  color: var(--dark-cream-color);
+
 }
 
 
@@ -232,10 +274,36 @@ button{
   right: 50px;
 
   font-size: 2rem;
-  color: white;
+  color: var(--dark-cream-color);
+
   display: none;
 }
+.themebtn {
+  position: relative;
+  right: 100px;
+  font-size: 2rem;
+  color: var(--dark-cream-color);
 
+  width: 60px;
+  height: 60px;
+}
+.themebtn span{
+  height: auto;
+  width: 50px;
+  height: 50px;
+  display: grid;place-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+.themebtn span:hover{
+  cursor: pointer;
+  color: #e9d7c5;
+  background: #04579b;
+  
+}
 
 @media only screen and (max-width: 950px) {
   .side-navbar{
@@ -263,7 +331,9 @@ button{
 
 
 #thenextera {
-    color: rgba(255, 255, 255, 0.50);
+    /* color: rgba(255, 255, 255, 0.50); */
+    color: var(--dark-cream-color);
+
     font-family: plusjakartasansextrabold;
     font-size: clamp(3rem, 7vw, 10rem);
     font-style: normal;
@@ -278,6 +348,7 @@ button{
     display: flex;
     justify-content: center;
     margin: auto;
+    filter: drop-shadow(0px 0px 20px black);
 }
 
 .page {

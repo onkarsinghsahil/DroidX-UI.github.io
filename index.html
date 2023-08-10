@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-size: 1rem;
+            margin-right: 3px;
+          /* border: 2px solid blue; */
+          height: 100%;
+            font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+          
+        }
+        </style>
+
 </head>
 <body>
     <div id="container">
@@ -18,7 +38,19 @@
                         </div>
                         <div class="right">
                             <div class="network">JIO 4G - JIO</div><br>
-                            <div class="battery">LTE 17%</div>
+                            <div class="battery">
+                                <span class="material-symbols-outlined">
+                                signal_cellular_alt
+                                </span>
+                                LTE 
+                                <span class="material-symbols-outlined">
+                                    signal_cellular_4_bar
+                                    </span>
+                                <span class="material-symbols-outlined">
+                                    battery_4_bar
+                                </span>
+                                17%
+                            </div>
                         </div>
                     </div>
                     <div class="boxes">
@@ -31,7 +63,10 @@
 
                     </div>
                     <div class="blank">
-                    <i onclick="toggle()" class="fa-solid fa-circle-xmark"></i>
+                    <span onclick="toggle()" class="material-symbols-outlined">
+                        close
+                        </span>
+                    
                     </div>
 
                 </div>
@@ -65,16 +100,25 @@
                             <button id="downloadbtn">Download</button>
                         </a>
                 </div>
-                <div class="menubtn" ><i onclick="toggle()" id="menuBtn" class="fa-solid fa-bars"></i></div>
+                <div class="themebtn"><span id="theme" onclick="change_theme()" class="material-symbols-outlined">
+                    dark_mode
+                    </span>
+                </div>
+                <div class="menubtn">
+                    <i onclick="toggle()" id="menuBtn" class="fa-solid fa-bars">
+                    </i>
+                </div>
             </div>
 
     <div id="subhead">
-        <h1 id="thenextera">The <span style="color: #FFF">Next </span>Era.</h1>
-        <a href="#page1"> <img src="imgs/downarrow.png" id="downarrow"></a>
+        <h1 id="thenextera">The <span>Next </span>Era.</h1>
+        <a href="#page1"> 
+            <img src="imgs/downarrow.png" id="downarrow">
+        </a>
     </div>
     
 
-
+<!-- 
 
 
     <div id="page1">
@@ -97,7 +141,7 @@
         <a href="https://t.me/DroidXUI_announcements"><p id="telegram">Telegram</p></a>
         <a href="https://twitter.com/DroidXUI"><p id="twitter">Twitter</p></a>
         <p id="instagram">Instagram</p>
-    </div>
+    </div> -->
 </div>
 </body>
 </html>
